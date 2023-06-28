@@ -1,0 +1,1465 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #EDF2EC;
+
+    margin: 0px;
+}
+
+.wrapper {
+     min-height: 100vh;
+     max-width: 1220px; /*it was 1440 px*/
+     margin: 0 auto;
+
+     background-color: #EDF2EC;
+}
+
+/* header's styles start */
+
+header {
+    height: 134px;
+}
+
+.navigation {
+    width: 452px;
+    height: 50px;
+}
+
+.menu {
+    font-family: 'Inika';
+    font-style: normal;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #010201;
+}
+
+.menu a:hover {
+    color: #E06733;
+    transition: .5s;
+}
+
+.plants {
+    font-family: 'Inika';
+    font-style: normal;
+    color: #010201;
+
+    text-decoration: none;
+}
+
+/* .plants:hover {
+    color: #499A18;
+    transition: .5s;
+} */
+
+.menu_item {
+    margin-right: 46px;
+    cursor: pointer;
+}
+
+/* .menu_item:hover {
+    opacity: 0.40;
+    transition: 1.5s;
+} */
+
+.menu_item:last-child {
+    margin-right: 0;
+}
+
+li {
+    list-style: none;
+    display: flex;
+}
+
+.header {
+    max-width: 1220px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+
+.header__burger {
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+}
+
+.burger__line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color:#E06733;
+    position: absolute;
+    left: 0;
+}
+
+.burger__line_first {
+    top: 0px;
+}
+
+.burger__line_second {
+    top: 50%;
+    transform: translateY(-50%); /* ? */
+}
+
+.burger__line_third {
+    bottom: 0px;
+}
+
+
+.logo {
+    display: flex;
+}
+
+/* header's styles end */
+
+
+/* welcome's styles start*/
+
+ .img_leafs {
+    max-width: 448px;
+
+    margin-bottom: 62px;
+    /* height: 406px; */
+
+    /* position: relative;
+    bottom: 62px;
+    left: 109px; */
+}
+
+
+h1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 50px;
+    color: #717171;
+}
+
+.paragraphe_welcome {
+    display: flex;
+    width: 525px;
+
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+
+    padding-bottom: 35px;
+}
+
+.welcome {
+    /* height: 532px; */
+    background-color: #EDF2EC;
+
+    display: grid;
+    align-items: flex-end; 
+    justify-content: space-between;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 224px;
+}
+
+
+.welcome_text {
+    padding-bottom: 94px;
+
+    max-width: 549px;
+}
+
+.button_welcome {
+    box-sizing: border-box;
+
+    width: 158px;
+    height: 44px;
+
+    border: 2px solid #E06733;
+    border-radius: 10px;
+
+    font-family: 'Inter';
+    font-style: normal ;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: center;
+}
+
+.button_welcome:hover {
+    width: 170px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+}
+
+.button_text {
+    color:#000000;
+}
+/* welcome's styles end */
+
+
+/* about's styles start*/
+
+.about {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-gap: 153px; */
+
+
+    background-color: #FFFFFF;
+}
+
+.text_about {
+    align-items: center;
+}
+
+h2 {
+
+    font-family: 'Inika';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+
+    margin-top: 161px;
+}
+
+.paragraphe_about {
+    margin-top: 40px;
+    margin-bottom: 155px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    max-width: 605px;
+}
+
+.img_about {
+    /* padding-right: 109px; */
+    padding-bottom: 94px;
+  
+}
+
+/*about's styles end */
+
+
+/*service's styles start */
+
+.service {
+    margin: auto 0;
+}
+
+.header_service {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    max-width: 1007px;
+    margin-bottom: 80px;
+}
+
+h2 {
+    max-width: 306px;
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+
+    color: #499A18;
+
+    margin-top: 40px;
+}
+
+.buttons_service {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    grid-gap: 38px;
+
+    padding-bottom: 60px;
+}
+
+.button_service-gardens, .button_service-lawn, .button_service-planting {
+    max-width: 559px;
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #E06733;
+
+    box-sizing: border-box;
+    width: 161px;
+    height: 50px;
+
+    border: 1px solid #E06733;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* .button_service:hover {
+    color: #E3E1D5;
+    background-color: #499A18;
+    transition: 1s;
+} */
+
+.button_service-gardens_active, .button_service-lawn_active, .button_service-planting_active {
+    color: #E3E1D5;
+    background-color: #499A18;
+    transition: 1s;
+ }
+
+.services_service {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    max-width: 1222px;
+}
+
+.service_item1 {
+    max-width: 330px;
+}
+
+/* .service_item1_active, .service_item2_active, .service_item3_active, .service_item4_active, .service_item5_active, .service_item6_active {
+    filter: blur(5px);
+} */
+
+.garden_active, .lawn_active, .planting_active {
+    filter: blur(2px);
+    transition: .5s;
+}
+
+
+h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+
+    color: #E06733;
+}
+
+.paragraphe_service {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #717171;
+}
+   
+.text_picture {
+    border: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+
+    text-align: center;
+}
+
+.service_item1, .service_item2, .service_item3 {
+    margin-bottom: 55px;
+}
+
+.service_item4, .service_item5, .service_item5, .service_item6 {
+    margin-bottom: 110px;
+}
+
+/* service's styles end */
+
+
+/*prices' styles start*/
+
+.prices {
+    /* height: 560px; */
+
+    background-color: #FFFFFF;
+}
+
+.prices_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_prices {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #000000;
+}
+
+.btn {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn_icon {
+margin-right: 20px;
+
+border-radius: 10px;
+}
+
+.btn_icon::after {
+    content: '\02C5';
+    border: .5px;
+    
+    color: #FFFFFF;
+}
+
+.btn_icon_active::after {
+    content: '\005E'
+}
+
+.price_item {
+    display: none;
+}
+
+.price_item_active {
+    display:flow-root;
+}
+
+.contact_us {
+    width: 488px;
+}
+
+h3 {
+    width: 452px;
+    height: 103px;
+    /* margin-right: 109px; */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+
+    text-align: right;
+
+    color: #000000;
+
+    margin-bottom: 34px;
+}
+
+.service_prices {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 332px;
+
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+
+    padding: 34px 41px;
+
+}
+
+.dif_prices {
+    box-sizing: border-box;
+
+    background: #EDF2EC;
+    border-radius: 20px;
+
+    width: 250px;
+    height: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    justify-content: space-between;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+
+    color: #000000;
+
+    margin-bottom: 32px;
+}
+
+.dif_prices_active {
+    height: auto;
+
+    background: #D6E7D2; ;
+}
+
+.price_item {
+    margin-left: 34px;
+    margin-right: 47px;
+}
+
+.price_item_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+
+    /* margin-left: 34px;
+    margin-right: 47px; */
+
+    color: #717171;
+}
+
+.price_item_price1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #E06733;
+}
+
+.price_item_price2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.order_btn {
+    background-color: #FFFFFF;
+    margin-right: 80px;
+    margin-bottom: 10px;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    border-radius: 10px;
+
+    color: #717171;
+
+    height: 25px;
+}
+
+.order_btn a {
+    text-decoration: none;
+
+    color: #717171;
+}
+    
+
+
+h3 {
+    max-width: 452px;
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.btn_icon {
+    width: 16px;
+    height: 16px;
+
+    background: #D9D9D9;
+}
+
+.contact_us_button {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #E06733;
+
+    box-sizing: border-box;
+    width: 161px;
+    height: 50px;
+
+    border: 1px solid #E06733;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin-left: 300px;
+    margin-bottom: 39px;
+
+    background-color: #FFFFFF;
+}
+
+.contact_us_button:hover {
+    width: 170px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+}
+
+
+.four_leafs {
+    margin-left: 300px;
+    
+}
+
+/* prices' styles end */
+
+/* contact's styles start */
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#contactsT {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+
+    color: #499A18;
+
+    margin-top: 60px;
+}
+
+.img_contacts {
+    padding-top: 53px;
+
+    margin-bottom: 0px;
+}
+
+.button_city  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 450px;
+    height: 50px;
+   
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+
+    margin-top: 148px;
+}
+
+.button_city_active {
+    background: #C1E698;
+    box-shadow: none;
+}
+
+#button_city {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+
+    margin-left: 16px;
+}
+
+.drop_button {
+    border-radius: 10px;
+    width: 16px;
+    height: 16px;
+
+    background-color: #AEA1A1;
+
+    margin-right: 33px;
+
+    display: flex;
+    align-items: center;
+}
+
+.drop_button::after {
+    content: '\02C5';
+    border: .5px;
+    
+    margin-left: 3.5px;
+    color: #D6E7D2;
+}
+
+.location_list {
+    display: none;
+}
+
+
+.location_list_active {
+    display: block;
+    margin-top: 25px;
+}
+
+.drop_button_active::after {
+    content: '\005E';
+}
+
+/* City cards */
+
+.location_variant {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+
+    letter-spacing: 0.05em;
+
+    color: #499A18;
+
+    cursor: pointer;
+}
+
+.location_variant:hover {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+
+    letter-spacing: 0.05em;
+
+    color: #717171;
+}
+
+.city_cards {
+    /* display: none; */
+    padding-bottom: 32px;
+    margin-bottom: 49px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.city_card1, .city_card2, .city_card3, .city_card4 {
+    display: flex;
+    flex-direction: column;
+
+    display: none;
+}
+
+.city_card1_active, .city_card2_active, .city_card3_active, .city_card4_active {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+}
+
+
+.city_info, .phone_info, .adress_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-right: 33px;
+    margin-left: 35px;
+    
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+
+}
+
+.call_us_button {
+    width: 122px;
+    height: 26px;
+
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    margin-left: 164px;
+    margin-top: 24px;
+
+    cursor: pointer;
+}
+
+.call_us_button a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* contact's styles end */
+
+
+/* footer's styles start*/
+
+.footer {
+    margin: auto 0;
+    background-color: #FFFFFF;
+    background-size: 100%;
+}
+
+.footer_content {
+    /* height: 130px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 109px;
+}
+
+.footer_data {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+
+    color: #000000;
+}
+
+.footer_data a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer_data_list {
+    max-width: 188px;
+    height: 50px;
+
+    text-align: center;
+    display: flex;
+    
+    grid-gap: 20px;
+
+    padding: 0px;
+}
+
+/* footer's styles end */
+
+/* Media's styles start */
+
+
+/* Burger menu */
+@media screen and (max-width: 767px) {
+    .header__burger {
+        display: block;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 100%;
+
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        background-color: #D6E7D2;
+
+        z-index: 10;
+        padding: 75px;
+
+        transform: translateX(100%);
+        transition: .3s;
+    }
+
+    .navigation_active {
+        transform: translateX(0);
+    }
+
+    .menu_item {
+       width: 100%;
+       margin-right: 0px;
+       margin-bottom: 30px;
+    }
+
+    .menu_item:last-child {
+        margin-bottom: 0px;
+    }
+
+    .header__link {
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    .header__navigation-close {
+        width: 40px;
+        height: 40px;
+        position:absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+    
+    .header__close-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #E06733;
+        position: absolute;
+        top: 50%;
+    }
+
+    .header__close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header__close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}
+/* Burger menu */
+
+/* For mobile phones */
+@media screen and (max-width: 680px) {
+    .img_leafs {
+        display: none;
+    }
+
+    .welcome_wrapper {
+        padding: 25px 24px;
+    }
+
+    .paragraphe_welcome, .welcome, .about, .prices_content {
+        display: contents;
+    }
+
+    /* header */
+
+    .plants {
+        font-size: 16px;
+    }
+
+    .logo {
+        margin-left: 25px;
+    }
+
+
+    /* welcome */
+
+    .welcome_text {
+        padding-bottom: 24px;
+    }
+
+    .title_welcome {
+        font-size: 25px;
+        line-height: 35px;
+
+        margin-left: 25px;
+    }
+
+    .paragraphe_welcome {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .text_welcome {
+        margin-left: 25px;
+    }
+
+    .button_welcome {
+        width: 100px;
+        height: 34.14px;
+        margin-left: 25px;
+
+        margin-top: 10px;
+    }
+
+    .button_text {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    /* about */
+
+    .title_about {
+        width: 288px;
+
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
+
+        margin-top: 30px;
+        margin-bottom: 21px;
+
+        /* padding-left: 46px; */
+    }
+
+    .paragraphe_about {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 25px;
+        margin-bottom: 0px;
+
+        padding-left: 25px;
+        padding-left: 25px;
+    }
+
+    .img_about {
+        padding-bottom: 21px;
+    }
+
+    .img__about-plant {
+        /* width: 150px;
+        height: 147px; */
+
+        margin-top: 0px;
+        margin-left: 115px;
+        padding-right: 115px;
+    }
+
+    /* service */
+    #service {
+        font-size: 25px;
+        line-height: 33px;
+        padding-left: 25px;
+
+        width: 187px;
+        height: 69px;
+    }
+
+    .header_service {
+        margin-bottom: 0px;
+    }
+
+    button {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .buttons_service {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        grid-gap: 9px;
+        padding-left: 25px;
+    }
+
+    .service_item1, .service_item2, .service_item3, .service_item4, .service_item5, .service_item6 {
+
+       padding-left: 50px;
+       padding-left: 50px;
+    }
+
+    .img_services {
+        width: 280px;
+    }
+
+    /* prices */
+    .title_prices {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .service_prices {
+        width: 224px;
+        height: 235px;
+
+        margin-left: 79px;
+        padding: 20px 15px;
+    }
+
+    .dif_prices {
+        width: 180px;
+        height: 49px;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .contact_us {
+        padding-bottom: 40px;
+    }
+
+
+    .contact_us_button {
+        margin-bottom: 42px;
+        margin-left: 120px;
+        margin-top: 24px;
+    }
+
+    .four_leafs {
+        display: none;
+    }
+    /* contacts */
+
+    .contacts {
+        display: flex;
+        /* flex-direction: column-reverse; */
+        flex-flow: wrap;
+        align-items: center;
+    }
+
+    #contactsT {
+        display: flex;
+        width: 100%;
+        order: 0;
+        font-size: 25px;
+        line-height: 33px;
+
+        margin-left: 129px;
+        margin-top: 20px;
+    }
+
+    #contacts {
+        width: 100px;
+        height: 129px;
+    }
+
+    .button_city {
+        width: 300px;
+        height: 50px;
+
+        order: 1;
+
+        margin-left: 39px;
+
+        margin-top: 50px;
+    }
+
+    .img_contacts {
+        order: 2;
+
+        margin-left: 142px;
+        margin-top: 132px;
+
+        padding-top: 0;
+    }
+
+    .title__contact_us {
+        width: 230px;
+        height: 37px;
+
+        font-size: 20px;
+        line-height: 30px;
+
+        text-align: center;
+
+        margin-left: 76px;
+    }
+
+
+/* footer */
+
+/* .footer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 0;
+} */
+
+/* .footer_data_list {
+    width: 100%;
+}  */
+}
+.footer_content, .footer_data {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* .footer_data {
+    margin-top: 22px;
+} */
+
+.footer_data_list {
+    margin-top: 3px;
+    margin-bottom: 7px;
+    }
+
+
+
+@media screen and (max-width: 1260px) {
+
+    /* header */
+
+    .header {
+        padding-top: 30px;
+        padding-right: 50px;
+    }
+
+    .logo {
+        padding-left: 50px;
+    }
+
+    .menu {
+        font-size: 16px;
+        line-height: 50px;
+    }
+
+
+    /* welcome */
+    .welcome {
+        display: flex;
+        flex-direction: row-reverse;
+
+        grid-column-gap: 42px;
+    }
+
+    .img_leafs {
+
+        position: static;
+        margin-bottom: 120px;
+    }
+
+    .leafs {
+        width: 280px;
+        height: 254px;
+
+        margin-right: 50px;
+    }
+
+    .welcome_text {
+        padding-bottom: 70px;
+        padding-left: 50px;
+    }
+    
+    h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .paragraphe_welcome {
+        font-size: 16px;
+        line-height: 25px;
+      
+        width: 341px;
+        padding-bottom: 0px;
+    }
+    /* about us */
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        max-width: 423px;
+
+        font-size: 35px;
+        line-height: 46px;
+        text-align: center;
+
+        /* margin-left: 120px; */
+        margin-right: 120px;
+        margin-top: 0px;
+
+        padding-top: 40px;
+    }
+
+    .paragraphe_about {
+        margin-top: 50px;
+        margin-bottom: 70px;
+        margin-left: 50px;
+
+        max-width: 666px;
+    }
+
+    .img__about-plant {
+        width: 250px;
+        height: 258px;
+
+    }
+
+    /* services */
+    .header_service {
+        margin-left: 52px;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin-top: 60px;
+        margin-bottom: 35px;
+        margin-left: 50px;
+        padding-top: 0;
+
+        font-size: 35px;
+        line-height: 46px;
+        text-align: left;
+    }
+
+    .service_item1, .service_item3, .service_item5 {
+        /* margin-left: 50px; */
+        margin-bottom: 45px;
+        
+    }
+
+    .service_item2, .service_item4,.service_item6 {
+        /* margin-right: 50px; */
+        margin-bottom: 45px;
+    }
+
+
+
+    /* .img_services {
+        width: 280px;
+        height: 350px;
+    } */
+
+    h4 {
+        margin-top: 10px;
+    }
+
+
+    /* prices */
+
+    .contact_us {
+        width: 296px;
+
+        margin-top: 110px;
+        margin-right: 50px;
+    }
+
+    h3 {
+        width: 296px;
+        height: 77px;
+
+        font-size: 25px;
+        line-height: 35px;
+        margin-right: 20px;
+        margin-bottom: 21px;
+    }
+
+    .contact_us_button {
+        margin-left: 134px;
+        margin-bottom: 0px;
+    }
+
+    .four_leafs {
+        margin-left: 136px;
+        margin-top: 35px;
+    }
+
+    .title_prices {
+        margin-top: 40px;
+        margin-left: 64px;
+
+        font-size: 35px;
+        line-height: 42px;
+    }
+
+    .service_prices {
+        margin-top: 55px;
+        margin-left: 50px;
+    }
+
+    /* contacts */
+   
+
+    .contacts {
+        display: flex;
+        /* flex-direction: column-reverse; */
+        flex-flow: wrap;
+        align-items: center;
+    }
+
+    #contactsT {
+        display: flex;
+        width: 100%;
+        order: 0;
+        font-size: 25px;
+        line-height: 33px;
+
+        margin-left: 129px;
+        margin-top: 20px;
+    }
+
+    .button_city {
+        width: 300px;
+        height: 50px;
+
+        order: 1;
+
+        margin-left: 39px;
+
+        margin-top: 50px;
+    }
+
+    .img_contacts {
+        width: 100%;
+
+        order: 2;
+
+        margin-left: 142px;
+        margin-top: 132px;
+
+        padding-top: 0;
+    }
+
+    /* .title__contact_us {
+        width: 230px;
+        height: 37px;
+
+        font-size: 20px;
+        line-height: 30px;
+
+        text-align: center;
+
+        margin-left: 76px;
+    } */
+
+
+    /* footer */
+
+    .footer_content {
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 0;
+    }
+}
+
+
+   
+
+/* @media screen and (max-width: 2200px) {
+    .footer_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        padding: 40px 109px;
+    }
+    
